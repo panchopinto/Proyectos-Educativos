@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Carrito / Checkout</title>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+    <div class="brand"><span class="dot"></span> Carrito</div>
+    <nav><a href="index.html">Inicio</a> <a href="plans.html">Planes</a></nav>
+  </div>
+</header>
+<main class="wrap" style="margin-top:18px">
+  <section class="card">
+    <h2>Tu carrito</h2>
+    <div id="cartItems"></div>
+    <div id="cartSummary" class="card" style="margin-top:12px"></div>
+    <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn" onclick="clearCart()">Vaciar carrito</button>
+      <a class="btn" href="quote.html?p=Carrito">Solicitar cotización</a>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap small">© Liceo Bicentenario San Nicolás</div></footer>
+<script src="js/cart.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Planes — VR/AR y SIAMP</title>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+    <div class="brand"><span class="dot"></span> Planes</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#vr">Planes VR/AR</a>
+      <a href="#siamp">Planes SIAMP</a>
+      <a href="products/vr.html">VR</a>
+      <a href="products/siamp.html">SIAMP</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" style="margin-top:18px">
+  <section id="vr" class="card">
+    <h2>VR/AR — Licencias por establecimiento</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Básico</h3>
+        <ul class="small">
+          <li>Acceso a contenidos base (células + trivias)</li>
+          <li>Actualizaciones menores</li>
+          <li>Soporte por email</li>
+        </ul>
+        <div class="kpi"><div>Renovación anual</div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn" data-pay="vr_licencia" data-pay-pref="flow">Comprar (Flow)</button>
+          <button class="btn" data-pay="vr_licencia" data-pay-pref="mercadopago">Comprar (MercadoPago)</button>
+          <a class="btn" href="quote.html?p=VR%20Básico">Solicitar cotización</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <ul class="small">
+          <li>Todo lo del Básico</li>
+          <li>Contenido ampliado (patrimonio “Ver con las Manos”)</li>
+          <li>2 sesiones de capacitación remota</li>
+        </ul>
+        <div class="kpi"><div>Renovación anual</div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn" data-pay="vr_licencia_pro" data-pay-pref="flow">Comprar (Flow)</button>
+          <button class="btn" data-pay="vr_licencia_pro" data-pay-pref="mercadopago">Comprar (MercadoPago)</button>
+          <a class="btn" href="quote.html?p=VR%20Pro">Solicitar cotización</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Institucional</h3>
+        <ul class="small">
+          <li>Todo lo del Pro</li>
+          <li>Soporte prioritario</li>
+          <li>Capacitación para todo el equipo</li>
+        </ul>
+        <div class="kpi"><div>Renovación anual</div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn" data-pay="vr_licencia_institucional" data-pay-pref="flow">Comprar (Flow)</button>
+          <button class="btn" data-pay="vr_licencia_institucional" data-pay-pref="mercadopago">Comprar (MercadoPago)</button>
+          <a class="btn" href="quote.html?p=VR%20Institucional">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="siamp" class="card" style="margin-top:18px">
+    <h2>SIAMP — Kit + Plataforma</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Básico (Kit + 3 meses)</h3>
+        <ul class="small">
+          <li>Kit sensores + instalación guía</li>
+          <li>Panel de datos (Sheets/App)</li>
+          <li>Soporte por email</li>
+        </ul>
+        <div class="kpi"><div>Renovación trimestral</div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn" data-pay="siamp_basic" data-pay-pref="flow">Comprar (Flow)</button>
+          <button class="btn" data-pay="siamp_basic" data-pay-pref="mercadopago">Comprar (MercadoPago)</button>
+          <a class="btn" href="quote.html?p=SIAMP%20Básico">Solicitar cotización</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Pro (Kit + 12 meses)</h3>
+        <ul class="small">
+          <li>Todo lo del Básico</li>
+          <li>Implementación asistida</li>
+          <li>Reportes automáticos</li>
+        </ul>
+        <div class="kpi"><div>Renovación anual</div></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn" data-pay="siamp_pro" data-pay-pref="flow">Comprar (Flow)</button>
+          <button class="btn" data-pay="siamp_pro" data-pay-pref="mercadopago">Comprar (MercadoPago)</button>
+          <a class="btn" href="quote.html?p=SIAMP%20Pro">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap small">© Liceo Bicentenario San Nicolás</div></footer>
+<script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Cotización</title>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+    <div class="brand"><span class="dot"></span> Solicitar cotización</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="plans.html">Planes</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" style="margin-top:18px">
+  <section class="card">
+    <h2 id="prodTitle">Producto</h2>
+    <form id="quoteForm">
+      <input type="hidden" name="product" id="productField" value="General"/>
+      <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
+        <input required name="name" placeholder="Tu nombre" style="padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);background:#0b1224;color:#e6f0ff">
+        <input required type="email" name="email" placeholder="Tu correo" style="padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);background:#0b1224;color:#e6f0ff">
+      </div>
+      <input name="org" placeholder="Organización / Liceo / Empresa" style="margin-top:10px;padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);background:#0b1224;color:#e6f0ff; width:100%">
+      <textarea required name="message" rows="6" placeholder="Cuéntanos cuántas licencias/kits, plazos y cualquier requerimiento." style="margin-top:10px;padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);width:100%;background:#0b1224;color:#e6f0ff"></textarea>
+      <div class="kpi" style="margin-top:10px"><div>Respuesta en 24-72h</div><div>Factura/boleta</div></div>
+      <button class="btn" type="submit" style="margin-top:10px">Enviar solicitud</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap small">© Liceo Bicentenario San Nicolás</div></footer>
+<script>
+// read param p and set product field/title
+const params = new URLSearchParams(location.search);
+const p = params.get('p') || 'General';
+document.getElementById('productField').value = p;
+document.getElementById('prodTitle').textContent = 'Producto: ' + p;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/email.js" defer></script>
+</body>
+</html>
