@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Kits de Hidroponía/Acuaponía Educativa</title>
+<link rel="stylesheet" href="../css/styles.css"/></head>
+<body>
+<header class="header"><div class="wrap" style="display:flex;justify-content:space-between;align-items:center">
+  <div class="brand"><span class="dot"></span> Kits de Hidroponía/Acuaponía Educativa</div>
+  <nav><a href="../index.html">Inicio</a><a href="#precio">Precios</a><a href="#contacto">Contacto</a><a href="../cart.html">Carrito (<span id="cartCount">0</span>)</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="card" style="margin-top:18px">
+    <img src="../assets/img/hidroponia.svg" alt="Kits de Hidroponía/Acuaponía Educativa" style="width:100%;border-radius:12px;margin-bottom:12px"/>
+    <div class="badge">STEM</div>
+    
+<h1>Kits de Hidroponía/Acuaponía Educativa</h1>
+<p class="small">Sistemas NFT y de raíz flotante con riego automático, sensores y panel de datos. Incluye guía docente y actividades STEM.</p>
+<div class="kpi"><div>Mesones + bombas</div><div>Sensores y control</div><div>Guía docente</div><div>Soporte remoto</div></div>
+
+    <div id="precio" class="card" style="margin-top:14px">
+      <h3>Precios y contratación</h3>
+      <p class="small">Venta de kits + capacitación opcional. Configura tu link de pago si lo deseas.</p>
+      <div class="kpi" style="margin-top:8px">
+        <div>Factura/boleta</div><div>Capacitación opcional</div><div>Soporte por email</div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px"><button class="btn" data-pay="siamp_basic" data-pay-pref="flow">Comprar ahora (Flow)</button><button class="btn" data-pay="siamp_basic" data-pay-pref="mercadopago">Comprar ahora (MercadoPago)</button></div><a class="btn" href="mailto:franciscoandresp@gmail.com?subject=Interés%20Kits de Hidroponía/Acuaponía Educativa">Solicitar propuesta</a>
+    </div>
+  </section>
+
+  <section id="contacto" class="card" style="margin-top:18px">
+    <h3>Contacto</h3>
+    <p class="small">Escríbenos a <a href="mailto:franciscoandresp@gmail.com">franciscoandresp@gmail.com</a> o <a href="mailto:franciscopinto@liceosannicolas.cl">franciscopinto@liceosannicolas.cl</a></p>
+  </section>
+
+<section id="cotizacion" class="card" style="margin-top:18px">
+  <h3>Solicitar cotización</h3>
+  <form id="quoteForm">
+    <input type="hidden" name="product" value="Hidroponia"/>
+    <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr">
+      <input required name="name" placeholder="Tu nombre" style="padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);background:#0b1224;color:#e6f0ff">
+      <input required type="email" name="email" placeholder="Tu correo" style="padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);background:#0b1224;color:#e6f0ff">
+    </div>
+    <textarea required name="message" rows="5" placeholder="Describe tus necesidades…" style="margin-top:10px;padding:10px;border-radius:10px;border:1px solid rgba(148,163,184,.3);width:100%;background:#0b1224;color:#e6f0ff"></textarea>
+    <button class="btn" type="submit" style="margin-top:10px">Enviar cotización</button>
+  </form>
+</section>
+
+</main>
+<footer class="footer"><div class="wrap small">© Liceo Bicentenario San Nicolás</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="../js/email.js" defer></script>
+<script src="../js/app.js" defer></script>
+<script src="../js/cart.js" defer></script>
+
+<script>
+function wireAddToCart(){
+  document.querySelectorAll('[data-addcart]').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      const item={
+        id: el.getAttribute('data-id'),
+        title: el.getAttribute('data-title'),
+        badge: el.getAttribute('data-badge'),
+        price: Number(el.getAttribute('data-price')||0),
+        payKey: el.getAttribute('data-paykey')||'',
+        qty: 1
+      };
+      addToCart(item);
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', wireAddToCart);
+</script>
+</body></html>
