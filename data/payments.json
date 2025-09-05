@@ -1,0 +1,18 @@
+{
+  "flow": {
+    "siamp_basic": "https://www.flow.cl/btn.php?token=REEMPLAZAR_SIAMP_BASIC",
+    "vr_licencia": "https://www.flow.cl/btn.php?token=REEMPLAZAR_VR_LICENCIA",
+    "hidro_kit": "https://www.flow.cl/btn.php?token=REEMPLAZAR_HIDRO_KIT",
+    "siamp_pro": "https://www.flow.cl/btn.php?token=REEMPLAZAR_SIAMP_PRO",
+    "vr_licencia_pro": "https://www.flow.cl/btn.php?token=REEMPLAZAR_VR_PRO",
+    "vr_licencia_institucional": "https://www.flow.cl/btn.php?token=REEMPLAZAR_VR_INST"
+  },
+  "mercadopago": {
+    "siamp_basic": "https://mpago.la/REEMPLAZAR_SIAMP_BASIC",
+    "vr_licencia": "https://mpago.la/REEMPLAZAR_VR_LICENCIA",
+    "hidro_kit": "https://mpago.la/REEMPLAZAR_HIDRO_KIT",
+    "siamp_pro": "https://mpago.la/REEMPLAZAR_SIAMP_PRO",
+    "vr_licencia_pro": "https://mpago.la/REEMPLAZAR_VR_PRO",
+    "vr_licencia_institucional": "https://mpago.la/REEMPLAZAR_VR_INST"
+  }
+}

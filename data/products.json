@@ -1,0 +1,55 @@
+{
+  "org": {
+    "name": "Liceo Bicentenario de Excelencia Polivalente San Nicolás",
+    "city": "San Nicolás, Ñuble, Chile",
+    "contact_email": "franciscoandresp@gmail.com",
+    "contact_alt": "franciscopinto@liceosannicolas.cl",
+    "whatsapp": "https://wa.me/56900000000"
+  },
+  "products": [
+    {
+      "id": "siamp",
+      "title": "SIAMP — Sistema Integrado de Alimentación y Monitoreo Piscícola",
+      "summary": "Kit IoT con sensores (agua/ambiente) + app/Sheets + alimentación automática. Validado en invernadero del Liceo.",
+      "price": "desde $490.000 + suscripción",
+      "cta": "Solicitar demo",
+      "href": "products/siamp.html",
+      "badge": "IoT · Acuicultura",
+      "status": "En funcionamiento",
+      "image": "assets/img/siamp.svg"
+    },
+    {
+      "id": "vr",
+      "title": "VR/AR Inclusivo — Células & Patrimonio ‘Ver con las Manos’",
+      "summary": "Experiencias VR/AR accesibles, trivias y material docente alineado a CN08 OA02. 80+ Meta Quest 2 disponibles para pilotos.",
+      "price": "licencia anual por establecimiento",
+      "cta": "Ver paquete",
+      "href": "products/vr.html",
+      "badge": "EdTech · Inclusión",
+      "status": "En funcionamiento",
+      "image": "assets/img/vr.svg"
+    },
+    {
+      "id": "ortesis",
+      "title": "Órtesis 3D Personalizadas",
+      "summary": "Diseño y fabricación de órtesis a medida con acompañamiento kinesiólogo y pruebas en terreno.",
+      "price": "según evaluación",
+      "cta": "Coordinar evaluación",
+      "href": "products/ortesis.html",
+      "badge": "Salud · 3D",
+      "status": "Activa",
+      "image": "assets/img/ortesis.svg"
+    },
+    {
+      "id": "hidroponia",
+      "title": "Kits de Hidroponía/Acuaponía Educativa",
+      "summary": "Mesones NFT, raíz flotante y sistemas de riego automatizados con guía docente y panel de datos.",
+      "price": "desde $290.000",
+      "cta": "Explorar kits",
+      "href": "products/hidroponia.html",
+      "badge": "STEM",
+      "status": "Activa",
+      "image": "assets/img/hidroponia.svg"
+    }
+  ]
+}
